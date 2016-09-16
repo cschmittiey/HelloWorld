@@ -1,10 +1,5 @@
-
-/**
- * Write a description of class Project1 here.
- * 
- * @author Caleb Smith
- * @version 0.0.1
- */
+// Caleb Smith
+// v0.0.1
 public class project1
 {
     public static void main(String args[])
