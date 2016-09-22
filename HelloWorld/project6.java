@@ -1,4 +1,5 @@
-
+// Caleb Smith
+// v0.0.1
 public class project6 {
 
 	public static void main(String[] args) {
