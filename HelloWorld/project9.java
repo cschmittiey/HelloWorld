@@ -1,6 +1,8 @@
+// Caleb Smith
+// v0.0.1
 import java.util.Scanner;
 
-public class project8 {
+public class project9 {
 
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);

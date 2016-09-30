@@ -1,4 +1,4 @@
-// Caleb Smith
+/// Caleb Smith
 // v0.0.1
 import java.io.*;
 import java.util.*;
