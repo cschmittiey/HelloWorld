@@ -29,7 +29,7 @@ public class sleep {
 		int yearDays = totalYears * 365;
 		int totalMonths = month - birthMonth;
 		int monthDays = totalMonths * 30;
-		int totalDays = yearDays + monthDays + (birthDay - day);
+		int totalDays = yearDays + monthDays + (day - birthDay);
 		
 		System.out.println("You have been alive for " + totalDays + " days.");
 		
