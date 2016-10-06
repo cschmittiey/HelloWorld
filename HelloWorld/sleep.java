@@ -32,6 +32,7 @@ public class sleep {
 		int totalDays = yearDays + monthDays + (day - birthDay);
 		
 		System.out.println("You have been alive for " + totalDays + " days.");
+		System.out.println("You have slept for " + ((totalDays * 24) / 3) + " hours.");
 		
 	}
 
