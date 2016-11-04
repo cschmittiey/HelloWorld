@@ -76,12 +76,26 @@ public class decToBinAndBack {
 			System.exit(0);
 		}
 		
-		for (int i = 0; Math.pow(2,i) < arg; i++)
-		{
-			
+		if (getHighestPowerOfTwo(arg) == 0) {
+			System.out.println(newNum);
+		} else {
+			for (int i = 0; i>=)
 		}
 		
 		return(newNum);
+	} 
+	
+	static int getHighestPowerOfTwo(int arg) {
+		int temp = 0;
+		
+		for (int i = 0; Math.pow(2,i) < arg; i++)
+		{
+			System.out.println("[d] i: " + i);
+			temp = (int)Math.pow(2, i);
+			System.out.println("[d] temp: " + temp);
+			
+		}
+		return(temp);
 	}
 
 }
