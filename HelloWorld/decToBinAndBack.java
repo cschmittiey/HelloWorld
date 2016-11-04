@@ -54,8 +54,6 @@ public class decToBinAndBack {
 		int newNum = 0;
 		String temp = "";
 		
-		System.out.println("Binary: " + arg); 
-		
 		temp = Integer.toString(arg); //only way to get an int's length is to convert it to a string
 		
 		int numArray[] = new int[temp.length()]; // This takes that string and populates an array with each number, 1011 -> "1011" -> [1,0,1,1]
