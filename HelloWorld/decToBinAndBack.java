@@ -11,7 +11,10 @@ public class decToBinAndBack {
 		
 		if (getNumberType() == 'b')
 		{
-			toDecimal(getNumber());
+			System.out.println("Decimal: " + toDecimal(getNumber()));
+		}
+		else {
+			System.out.println("Binary: "+ toBinary(getNumber()));
 		}
 			
 		
@@ -39,7 +42,6 @@ public class decToBinAndBack {
 	}
 	
 	static int getNumber() {
-		int num = 0;
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Enter the number:  ");
 		return(reader.nextInt());
@@ -48,24 +50,37 @@ public class decToBinAndBack {
 	static int toDecimal(int arg) {
 		int newNum = 0;
 		String temp = "";
-		String rtemp = "";
 		
-		System.out.println("Binary:" + arg); // 1011
+		System.out.println("Binary: " + arg); // 1011
 		
 		temp = Integer.toString(arg);
-		System.out.println(temp);
 		int numArray[] = new int[temp.length()];
 		for (int i = 0; i < temp.length(); i++)
 		{
 			numArray[i] = temp.charAt(i) - '0';
-			System.out.println(numArray[i]);
 			
 		}
 		for (int i = 0; i < temp.length(); i++)
 		{
-			System.out.println(numArray[i] * Math.pow(2, (numArray.length - 1 - i )));
+			newNum += (numArray[i] * Math.pow(2, (numArray.length - 1 - i )));
+		}
+		return(newNum);
+	}
+	
+	static int toBinary(int arg) {
+		int newNum = 0;
+		int temp = 0;
+		
+		if (arg < 0) {
+			System.out.println("Detected negative decimal number, converting of negative numbers is not supported.");
+			System.exit(0);
+		}
+		
+		for (int i = 0; Math.pow(2,i) < arg; i++)
+		{
 			
 		}
+		
 		return(newNum);
 	}
 
